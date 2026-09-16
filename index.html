@@ -1,0 +1,1052 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="author" content="Matthew Alberts">
+<meta name="description" content="10XCREW on LinkedIn, Instagram and YouTube - internal channel review, 14 September 2026.">
+<meta name="color-scheme" content="light only">
+<title>10XCREW Channel Review 2026</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700;800&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&display=swap">
+<style>
+/* ---------- tokens: one light design, fixed on every system ---------- */
+:root{
+  color-scheme:light;
+  --paper:#ffffff; --tint:#f7fafb; --soft:#e8f4f7; --us-row:#fff6e9;
+  --ink:#0f2329; --ink-2:#4b6068; --muted:#62757b;
+  --line:#e6edef; --edge:#7f979f;
+  --teal:#0b8199; --teal-deep:#076a7e; --on-teal:#ffffff;
+  --orange:#f68c00; --orange-ink:#b35f00;
+  --c-us:var(--orange); --c-them:var(--teal); --grid:#eaf0f2;
+  --r:14px;
+  --shadow:0 24px 48px -16px rgba(15,35,41,.18);
+  --navh:64px;
+  --col:1160px;
+  --gutter:clamp(20px,4.5vw,48px);
+  --font-head:Montserrat,"Helvetica Neue",Arial,sans-serif;
+  --font-body:"Source Serif 4",Georgia,"Times New Roman",serif;
+  --ease:cubic-bezier(.2,.7,.2,1);
+  --fast:.25s; --mid:.3s; --slow:.6s;
+}
+
+/* ---------- base ---------- */
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%;scroll-behavior:smooth;scroll-padding-top:calc(var(--navh) + 24px);background:var(--paper)}
+body{
+  margin:0;background:var(--paper);color:var(--ink);
+  font-family:var(--font-body);font-size:18px;line-height:1.6;
+  -webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;
+}
+h1,h2,h3,h4{font-family:var(--font-head);margin:0;text-wrap:balance;line-height:1.1}
+h1{font-size:clamp(40px,7vw,84px);font-weight:800;letter-spacing:-.03em;line-height:1}
+h2{font-size:clamp(32px,4.6vw,56px);font-weight:800;letter-spacing:-.03em;color:var(--ink);line-height:1}
+h3{font-size:clamp(19px,1.6vw,22px);font-weight:700;color:var(--ink);letter-spacing:-.01em}
+h4{font-size:16px;font-weight:700;color:var(--ink);letter-spacing:0}
+p{margin:0 0 16px;max-width:70ch;text-wrap:pretty}
+p:last-child{margin-bottom:0}
+strong{font-weight:600}
+em{font-style:italic}
+a{color:var(--teal-deep);text-decoration:none;cursor:pointer}
+.js a{transition:color var(--mid) var(--ease)}
+:focus-visible{outline:3px solid var(--teal);outline-offset:4px;border-radius:4px}
+img,svg{max-width:100%}
+::selection{background:var(--soft);color:var(--ink)}
+
+/* one outer wrapper carries the side gutter */
+.wrap{width:100%;max-width:var(--col);margin-inline:auto;padding-inline:var(--gutter)}
+
+.eyebrow{font-family:var(--font-head);font-size:14px;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:var(--teal-deep);margin:0;max-width:none}
+.prose{max-width:70ch}
+.prose p{font-size:18px;color:var(--ink-2)}
+
+/* ---------- cursor ring (created by the script, only for a fine pointer) ---------- */
+.cur{position:fixed;top:0;left:0;width:20px;height:20px;margin:0;border:1.5px solid var(--ink);border-radius:50%;pointer-events:none;z-index:100;opacity:0;will-change:transform}
+.js .cur{transition:opacity var(--mid) var(--ease)}
+.cur.show{opacity:1}
+.cur.show.on{opacity:.45}
+
+/* ---------- nav ---------- */
+.nav{position:sticky;top:0;z-index:60;background:var(--paper);border-bottom:1px solid var(--line)}
+.nav .wrap{display:flex;align-items:center;justify-content:space-between;gap:24px;min-height:var(--navh);position:relative}
+.progress{position:absolute;left:0;right:0;bottom:-1px;height:2px;background:var(--teal);transform:scaleX(0);transform-origin:left center;pointer-events:none}
+.brand{display:flex;align-items:baseline;gap:16px;flex-wrap:wrap;min-width:0}
+.brand-link{font-family:var(--font-head);font-weight:800;font-size:18px;letter-spacing:.02em;color:var(--ink);text-decoration:none}
+.brand-link:hover{color:var(--teal-deep)}
+.brand-sub{font-family:var(--font-head);font-size:14px;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);margin:0;max-width:none}
+.nav-toggle{display:none;align-items:center;gap:8px;font-family:var(--font-head);font-size:14px;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:var(--ink);background:transparent;border:1px solid var(--edge);border-radius:var(--r);padding:8px 16px;cursor:pointer}
+.js .nav-toggle{transition:color var(--mid) var(--ease), border-color var(--mid) var(--ease)}
+.nav-toggle:hover{color:var(--teal-deep);border-color:var(--teal)}
+.nav-toggle .bars{display:grid;gap:3px}
+.nav-toggle .bars i{display:block;width:16px;height:1.5px;background:currentColor}
+.nav-wrap{position:relative;align-self:stretch;display:flex;align-items:center}
+.nav-list{list-style:none;display:flex;gap:clamp(12px,2vw,24px);margin:0;padding:0}
+.nav-list li{margin:0}
+.nav-link{font-family:var(--font-head);font-size:14px;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:var(--ink-2);text-decoration:none;display:block;padding-block:8px;cursor:pointer;border-radius:4px}
+.nav-link:hover{color:var(--ink)}
+.nav-link[aria-current="true"]{color:var(--teal-deep);font-weight:700}
+.nav-ink{position:absolute;left:0;bottom:-1px;width:1px;height:2px;background:var(--teal);transform-origin:left center;transform:scaleX(0);opacity:0;pointer-events:none}
+.js .nav-ink{transition:transform .45s var(--ease), opacity var(--mid) var(--ease)}
+
+/* ---------- hero ---------- */
+.hero{background:var(--paper);color:var(--ink);padding-block:clamp(48px,8vw,112px) clamp(48px,7vw,72px)}
+.hero .wrap{display:grid;gap:clamp(24px,3vw,32px)}
+.hero h1{color:var(--ink);max-width:14em}
+.hero .sub{font-family:var(--font-body);font-size:clamp(18px,1.9vw,23px);line-height:1.5;color:var(--ink-2);max-width:60ch;margin:0}
+.ln{display:block;overflow:hidden;padding-bottom:.08em;margin-bottom:-.08em}
+.ln>span{display:block}
+
+.stat{display:flex;align-items:flex-end;gap:clamp(16px,3.2vw,48px);flex-wrap:wrap;border-top:1px solid var(--line);padding-top:clamp(24px,3.4vw,48px);margin-top:8px}
+.stat-col{display:grid;gap:12px;min-width:0;flex:0 1 auto}
+.stat-n{font-family:var(--font-head);font-weight:800;font-variant-numeric:tabular-nums;line-height:.8;letter-spacing:-.05em;margin:0;max-width:none}
+.stat-n.big{font-size:clamp(104px,17vw,208px);color:var(--orange-ink)}
+.stat-n.small{font-size:clamp(56px,7vw,96px);color:var(--ink)}
+.stat-l{font-family:var(--font-head);font-size:14px;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);margin:0;max-width:24ch}
+.stat-vs{align-self:stretch;display:grid;place-items:center;font-family:var(--font-head);font-size:14px;font-weight:600;letter-spacing:.16em;text-transform:uppercase;color:var(--muted);margin:0;max-width:none;border-left:1px solid var(--line);padding-left:clamp(16px,3vw,48px)}
+
+.cta{list-style:none;display:flex;flex-wrap:wrap;gap:12px;margin:0;padding:0}
+.btn{position:relative;isolation:isolate;overflow:hidden;display:inline-block;font-family:var(--font-head);font-size:14px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;text-decoration:none;padding:16px 24px;border-radius:var(--r);cursor:pointer;line-height:1.2}
+.btn::before{content:"";position:absolute;inset:0;z-index:-1;background:var(--teal-deep);transform:scaleY(0);transform-origin:bottom center}
+.js .btn::before{transition:transform var(--mid) var(--ease)}
+.btn:hover::before,.btn:focus-visible::before{transform:scaleY(1)}
+.btn-1{background:var(--teal);color:var(--on-teal);border:1px solid var(--teal)}
+.btn-1:hover,.btn-1:focus-visible{border-color:var(--teal-deep)}
+.btn-2{background:transparent;color:var(--ink);border:1px solid var(--edge)}
+.btn-2::before{background:var(--teal)}
+.btn-2:hover,.btn-2:focus-visible{color:var(--on-teal);border-color:var(--teal)}
+.js .btn{transition:color var(--mid) var(--ease), border-color var(--mid) var(--ease), transform .2s var(--ease)}
+.btn:active{transform:scale(.98)}
+
+.meta{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:24px 32px;border-top:1px solid var(--line);padding-top:clamp(24px,3vw,32px);font-size:14px;color:var(--ink)}
+.meta>div{min-width:0}
+.meta b{display:block;font-family:var(--font-head);font-size:14px;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);font-weight:600;margin-bottom:8px}
+.meta span{font-family:var(--font-body);font-size:16px;line-height:1.45;color:var(--ink-2)}
+.meta em{color:var(--muted)}
+
+/* ---------- bands ---------- */
+main{border-top:1px solid var(--line)}
+.band{--band-bg:var(--paper);background:var(--band-bg);padding-block:clamp(72px,10vw,112px)}
+.band-tint{--band-bg:var(--tint)}
+.band + .band{border-top:1px solid var(--line)}
+.foot-band{padding-block:0 clamp(48px,6vw,72px)}
+
+.sec-sentinel{display:block;height:1px;margin-bottom:-1px}
+.sec-head{position:sticky;top:var(--navh);z-index:30;background:var(--band-bg);display:flex;align-items:baseline;flex-wrap:wrap;gap:8px 24px;margin-inline:-16px;padding:16px 16px 12px;margin-bottom:clamp(32px,5vw,48px)}
+.sec-marks{display:contents}
+.sec-num{order:1;font-family:var(--font-head);font-weight:800;font-size:clamp(20px,2vw,24px);line-height:1;letter-spacing:-.02em;color:var(--teal-deep);margin:0;font-variant-numeric:tabular-nums;max-width:none}
+.sec-head h2{order:2;flex:0 1 auto}
+.sec-rule{order:3;flex:1 1 48px;height:1px;background:var(--line);min-width:24px;align-self:center}
+.sec-of{order:4;font-family:var(--font-head);font-size:14px;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);margin:0;max-width:none}
+.sec-head::after{content:"";position:absolute;left:16px;right:16px;bottom:0;height:1px;background:var(--line);transform:scaleX(0);transform-origin:left center;opacity:0}
+.js .sec-head::after{transition:transform .5s var(--ease), opacity var(--mid) var(--ease)}
+.js .sec-head.stuck::after{transform:none;opacity:1}
+.js .sec-of{transition:opacity .35s var(--ease), transform .35s var(--ease)}
+.js .sec-head.stuck .sec-of{opacity:0;transform:translateY(-4px)}
+
+/* ---------- summary ---------- */
+.summary{counter-reset:s;list-style:none;padding:0;margin:0;display:grid;gap:0;max-width:78ch}
+.summary li{counter-increment:s;display:grid;grid-template-columns:48px 1fr;gap:24px;align-items:start;padding-block:24px;border-top:1px solid var(--line);font-size:18px;color:var(--ink-2)}
+.summary li:first-child{border-top:0;padding-top:0}
+.summary li:last-child{padding-bottom:0}
+.summary li::before{content:counter(s,decimal-leading-zero);font-family:var(--font-head);font-weight:700;font-size:14px;letter-spacing:.1em;font-variant-numeric:tabular-nums;color:var(--teal-deep);padding-top:8px}
+
+/* ---------- cards: one border, one radius, one hover ---------- */
+.tile,.opp,figure,.table-shell,.callout{background:var(--paper);border:1px solid var(--line);border-radius:var(--r)}
+.js .tile,.js .opp,.js figure,.js .table-shell{transition:transform var(--mid) var(--ease), border-color var(--mid) var(--ease)}
+.tile:hover,.opp:hover,figure:hover,.table-shell:hover,
+.js .tile.rv.in:hover,.js .opp.rv.in:hover,.js figure.rv.in:hover,.js .table-shell.rv.in:hover{transform:translateY(-3px);border-color:var(--teal)}
+
+/* ---------- tiles: three cards on shared rows (subgrid) ---------- */
+.tiles{display:grid;grid-template-columns:repeat(3,1fr);grid-template-rows:auto auto auto auto;column-gap:24px;row-gap:16px;margin:0 0 clamp(32px,5vw,48px)}
+.tile{grid-row:span 4;display:grid;grid-template-rows:subgrid;row-gap:16px;align-content:start;padding:24px}
+.tile .ch{display:grid;gap:4px;align-content:start;font-family:var(--font-head);font-size:14px;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:var(--teal-deep)}
+.tile .handle{display:block;font-family:var(--font-body);font-size:14px;color:var(--muted);text-transform:none;letter-spacing:0;font-weight:400;overflow-wrap:anywhere}
+.kpi{font-family:var(--font-head);font-size:clamp(48px,5.2vw,64px);font-weight:800;line-height:1;color:var(--ink);font-variant-numeric:tabular-nums;letter-spacing:-.04em}
+.kpi small{display:block;font-family:var(--font-head);font-size:14px;font-weight:600;color:var(--muted);letter-spacing:.1em;text-transform:uppercase;margin-top:8px}
+.tile dl{margin:0;display:grid;grid-template-columns:1fr auto;gap:8px 16px;font-size:14px;font-family:var(--font-head);align-content:start}
+.tile dt{color:var(--ink-2);font-weight:500}
+.tile dd{margin:0;font-weight:700;font-variant-numeric:tabular-nums;text-align:right;color:var(--ink)}
+.tile dd.na{font-weight:500}
+.tile .warn{font-family:var(--font-body);font-size:15px;color:var(--ink-2);border-left:2px solid var(--teal);padding-left:16px;line-height:1.5;align-self:start}
+
+/* ---------- observations ---------- */
+.obs{display:grid;grid-template-columns:repeat(3,1fr);gap:32px;margin:24px 0 0}
+.obs>div{border-top:2px solid var(--teal);padding-top:16px}
+.obs h4{margin:0 0 8px}
+.obs p{font-size:16px;margin-bottom:0;max-width:46ch;color:var(--ink-2)}
+.sub-head{font-family:var(--font-head);font-size:clamp(19px,1.7vw,24px);font-weight:700;color:var(--ink);margin:clamp(48px,6vw,72px) 0 0;letter-spacing:-.01em}
+
+/* ---------- tables ---------- */
+.table-shell{position:relative;margin:24px 0 0;overflow:hidden}
+.table-wrap{overflow-x:auto;border-radius:inherit}
+.table-shell::after{content:"";position:absolute;top:0;right:0;bottom:0;width:72px;z-index:4;pointer-events:none;opacity:0;background:linear-gradient(to right, transparent, var(--paper))}
+.js .table-shell::after{transition:opacity var(--mid) var(--ease)}
+.js .table-shell.more::after{opacity:1}
+table{border-collapse:collapse;width:100%;font-family:var(--font-head);font-size:14px;line-height:1.45}
+th,td{padding:16px;text-align:left;vertical-align:top;border-bottom:1px solid var(--line)}
+thead th{position:sticky;top:0;z-index:2;font-size:14px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);background:var(--paper);border-bottom:1px solid var(--edge)}
+tbody tr:last-child td{border-bottom:0}
+td.num,th.num{text-align:right;font-variant-numeric:tabular-nums;white-space:nowrap}
+tbody td{color:var(--ink-2)}
+tbody td:first-child{color:var(--ink);font-weight:600}
+.comp th:first-child,.comp td:first-child,.matrix th:first-child,.matrix td:first-child{position:sticky;left:0;z-index:1;background:var(--paper);box-shadow:1px 0 0 var(--line)}
+.comp thead th:first-child,.matrix thead th:first-child{z-index:3}
+tr.us td{background:var(--us-row);font-weight:600;color:var(--ink)}
+.comp tr.us td:first-child,.matrix tr.us td:first-child{background:var(--us-row)}
+.comp tbody tr:not(.us)>td,.matrix tbody tr:not(.us)>td{background:var(--paper)}
+.comp tbody tr:not(.us):hover>td,.matrix tbody tr:not(.us):hover>td{background:var(--tint)}
+.na{color:var(--muted);font-style:italic;font-weight:400;text-decoration:underline dotted;text-decoration-color:var(--edge);text-underline-offset:3px}
+.matrix td,.matrix th{text-align:center;padding:12px 8px}
+.matrix td:first-child,.matrix th:first-child{text-align:left;white-space:nowrap;padding-left:16px}
+.dot{display:inline-block;width:12px;height:12px;border-radius:50%;background:var(--c-them);vertical-align:middle}
+.dot.no{background:transparent;border:1.5px solid var(--edge)}
+tr.us .dot{background:var(--orange-ink)}
+.comp td:nth-child(5){min-width:250px}
+.comp td:nth-child(6){min-width:190px}
+.comp td:nth-child(7){min-width:240px}
+.foot{font-size:15px;color:var(--ink-2);max-width:88ch;margin-top:24px}
+
+/* ---------- figures ---------- */
+figure{margin:clamp(32px,4.4vw,48px) 0 0;padding:24px 24px 24px}
+figure svg{width:100%;height:auto;display:block}
+.fig-title{font-family:var(--font-head);font-weight:700;font-size:16px;margin:0 0 4px;color:var(--ink);max-width:70ch}
+.fig-sub{font-family:var(--font-body);font-size:15px;color:var(--muted);margin:0 0 16px;max-width:80ch}
+figcaption{font-family:var(--font-body);font-size:15px;color:var(--ink-2);line-height:1.5;margin-top:16px;max-width:80ch}
+.legend{display:flex;flex-wrap:wrap;gap:16px;font-family:var(--font-head);font-size:14px;font-weight:600;letter-spacing:.06em;text-transform:uppercase;color:var(--ink-2);margin-bottom:12px}
+.legend i{display:inline-block;width:12px;height:12px;border-radius:3px;margin-right:8px;vertical-align:-1px}
+.bar{opacity:1}
+.js .bar{transition:opacity var(--mid) var(--ease)}
+svg:hover .bar{opacity:.5}
+svg .bar:hover{opacity:1}
+svg .bar:hover .val{font-weight:800;fill:var(--ink)}
+.axis{font-family:var(--font-head);font-size:11px;font-weight:500;fill:var(--muted)}
+.lbl{font-family:var(--font-head);font-size:12.5px;font-weight:600;fill:var(--ink)}
+.val{font-family:var(--font-head);font-size:12px;font-weight:700;font-variant-numeric:tabular-nums;fill:var(--ink-2)}
+.grid{stroke:var(--grid);stroke-width:1}
+.base{stroke:var(--edge);stroke-width:1}
+
+/* ---------- opportunities ---------- */
+.opps{display:grid;grid-template-columns:repeat(6,1fr);gap:24px;margin-top:8px}
+.opp{padding:24px;display:grid;gap:16px;align-content:start;grid-column:span 2}
+.opp:nth-child(n+4){grid-column:span 3}
+.opp h3{margin:0;max-width:26ch}
+.opp dl{margin:0;display:grid;grid-template-columns:112px 1fr;gap:12px 16px;font-size:16px}
+.opp dt{font-family:var(--font-head);font-size:14px;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:var(--teal-deep);padding-top:4px}
+.opp dd{margin:0;color:var(--ink-2)}
+
+/* ---------- plan timeline ---------- */
+.tl-head{display:flex;gap:24px;margin:24px 0 16px;padding-left:2px}
+.tl-head p{font-family:var(--font-head);font-size:14px;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);margin:0;max-width:none}
+.tl{list-style:none;margin:0;padding:0 0 0 clamp(24px,4vw,48px);border-left:2px solid var(--line);display:grid;gap:clamp(24px,3.2vw,32px)}
+.tl-i{position:relative;display:grid;grid-template-columns:132px 1fr;gap:12px 32px;align-items:start}
+.tl-i::before{content:"";position:absolute;left:calc(-1 * clamp(24px,4vw,48px) - 7px);top:8px;width:16px;height:16px;border-radius:50%;background:var(--teal);border:4px solid var(--band-bg)}
+.tl-n{font-family:var(--font-head);font-size:clamp(44px,5.2vw,64px);font-weight:800;line-height:.9;letter-spacing:-.04em;color:var(--ink);font-variant-numeric:tabular-nums;margin:0;max-width:none}
+.tl-d{font-family:var(--font-head);font-size:14px;font-weight:600;letter-spacing:.06em;text-transform:uppercase;color:var(--teal-deep);margin:8px 0 0;max-width:none}
+.tl-body{display:grid;gap:12px}
+.tl-f{display:grid;grid-template-columns:112px 1fr;gap:8px 16px}
+.tl-f .k{font-family:var(--font-head);font-size:14px;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);margin:0;padding-top:4px;max-width:none}
+.tl-f .v{margin:0;font-size:16px;color:var(--ink-2);max-width:56ch}
+.callout{border-left:3px solid var(--teal);padding:24px;margin:clamp(32px,4.4vw,48px) 0 0;font-size:16px}
+.callout p{margin:0;max-width:74ch;color:var(--ink)}
+
+/* ---------- sources ---------- */
+.refs{list-style:none;padding:0;margin:24px 0 0;font-size:15px;line-height:1.55;columns:2;column-gap:48px}
+.refs li{padding-left:2.2em;text-indent:-2.2em;overflow-wrap:anywhere;break-inside:avoid;margin-bottom:12px;color:var(--ink-2)}
+.refs a{position:relative;display:inline-block;max-width:100%;text-indent:0;color:var(--teal-deep);overflow-wrap:anywhere}
+.refs a::before,.refs a::after{content:"";position:absolute;left:0;right:0;bottom:1px;height:1px;pointer-events:none}
+.refs a::before{background:var(--line)}
+.refs a::after{background:currentColor;transform:scaleX(0);transform-origin:left center}
+.js .refs a::after{transition:transform var(--fast) var(--ease)}
+.refs a:hover::after,.refs a:focus-visible::after{transform:scaleX(1)}
+.refs a:hover{color:var(--teal)}
+.credit{margin-top:clamp(48px,6vw,72px);padding-top:24px;border-top:1px solid var(--line);font-family:var(--font-head);font-size:14px;letter-spacing:.02em;color:var(--muted);display:flex;flex-wrap:wrap;gap:8px 32px;justify-content:space-between}
+
+/* ---------- back to top ---------- */
+.to-top{display:block;width:fit-content;margin:clamp(48px,6vw,72px) 0 0 auto;font-family:var(--font-head);font-weight:800;font-size:14px;letter-spacing:.16em;color:var(--muted);text-decoration:none;cursor:pointer}
+.to-top::after{content:"";display:inline-block;width:7px;height:7px;border-top:1.5px solid currentColor;border-right:1.5px solid currentColor;transform:rotate(-45deg);margin-left:12px;vertical-align:2px}
+.js .to-top{opacity:0;transform:translateY(8px);transition:opacity .4s var(--ease), transform .4s var(--ease), color var(--mid) var(--ease)}
+.js.past .to-top{opacity:1;transform:none}
+.to-top:hover,.js.past .to-top:hover{color:var(--teal-deep);transform:translateY(-3px)}
+
+/* ---------- motion ---------- */
+@keyframes rise{from{opacity:0;transform:translateY(24px)}to{opacity:1;transform:none}}
+@keyframes lineUp{from{transform:translateY(106%)}to{transform:none}}
+@keyframes pop{from{opacity:0;transform:scale(.82)}to{opacity:1;transform:none}}
+.r{animation:rise var(--slow) var(--ease) both}
+.r1{animation-delay:0ms}.r2{animation-delay:340ms}.r3{animation-delay:420ms}
+.r4{animation-delay:500ms}.r5{animation-delay:580ms}
+.ln>span{animation:lineUp .7s var(--ease) both}
+.ln:nth-child(1)>span{animation-delay:70ms}
+.ln:nth-child(2)>span{animation-delay:160ms}
+.ln:nth-child(3)>span{animation-delay:250ms}
+.stat-n.big{animation:pop var(--slow) var(--ease) both;animation-delay:600ms}
+
+/* reveal: the stagger delay is set inline by the script and cleared once the item is in;
+   after that the card switches to its short hover transition (.done) */
+.js .rv{opacity:0;transform:translateY(16px);transition:opacity .5s var(--ease), transform .55s var(--ease), border-color var(--mid) var(--ease)}
+.js .rv.in{opacity:1;transform:none}
+.js .rv.done{transition:transform var(--mid) var(--ease), border-color var(--mid) var(--ease)}
+.js .bh{transform:scaleX(0);transform-box:fill-box;transform-origin:left center;transition:transform .65s var(--ease)}
+.js .bv{transform:scaleY(0);transform-box:fill-box;transform-origin:bottom center;transition:transform .65s var(--ease)}
+.js figure.in .bh,.js figure.in .bv{transform:none}
+.js figure .grid{opacity:0;transition:opacity .45s var(--ease)}
+.js figure.in .grid{opacity:1}
+.js figure .val{opacity:0;transition:opacity .4s var(--ease)}
+.js figure.in .val{opacity:1}
+
+/* ---------- responsive ---------- */
+@media (max-width:1200px){
+  .brand-sub{display:none}
+}
+@media (max-width:1040px){
+  .opps{grid-template-columns:repeat(2,1fr)}
+  .opp,.opp:nth-child(n+4){grid-column:span 1}
+  .opp:last-child{grid-column:span 2}
+  .obs{grid-template-columns:repeat(2,1fr)}
+}
+@media (max-width:980px){
+  :root{--navh:72px}
+  .nav-toggle{display:inline-flex}
+  .nav-wrap{position:static}
+  .nav-list{position:absolute;right:var(--gutter);top:calc(100% + 8px);flex-direction:column;gap:2px;background:var(--paper);border:1px solid var(--line);border-radius:var(--r);padding:12px 8px;box-shadow:var(--shadow);min-width:240px;opacity:0;transform:translateY(-8px);visibility:hidden;z-index:70}
+  .js .nav-list{transition:opacity var(--mid) var(--ease), transform var(--mid) var(--ease)}
+  .nav-list.open{opacity:1;transform:none;visibility:visible}
+  .nav-link{padding:12px 16px}
+  .nav-ink{display:none}
+}
+@media (max-width:820px){
+  .tiles{grid-template-columns:1fr;grid-template-rows:none;row-gap:16px}
+  .tile{grid-row:auto;grid-template-rows:auto auto auto auto}
+  .obs{grid-template-columns:1fr}
+  .refs{columns:1}
+  .tl-i{grid-template-columns:1fr}
+  .tl-d{margin-top:4px}
+}
+@media (max-width:680px){
+  body{font-size:17px}
+  .opps{grid-template-columns:1fr}
+  .opp,.opp:last-child{grid-column:span 1}
+  .opp dl{grid-template-columns:1fr;gap:4px}
+  .opp dt{padding-top:8px}
+  .tl-f{grid-template-columns:1fr;gap:4px}
+  .tl-f .k{padding-top:4px}
+  .summary li{grid-template-columns:32px 1fr;gap:16px}
+  .stat{flex-direction:column;align-items:flex-start;gap:16px}
+  .stat-vs{place-items:start;border-left:0;border-top:1px solid var(--line);padding-left:0;padding-top:16px;width:100%}
+  .sec-head{gap:8px 16px}
+  .sec-rule{display:none}
+  .credit{justify-content:flex-start}
+}
+
+/* ---------- preferences ---------- */
+@media (prefers-reduced-motion: reduce){
+  html{scroll-behavior:auto}
+  *,*::before,*::after{animation-duration:.001ms !important;animation-delay:0ms !important;transition-duration:.001ms !important;transition-delay:0ms !important}
+  .r,.ln>span,.stat-n.big{animation:none;opacity:1;transform:none}
+  .js .rv,.js figure .val,.js figure .grid,.js .to-top{opacity:1;transform:none}
+  .js .bh,.js .bv{transform:none}
+  .js .sec-head::after{opacity:1;transform:none}
+  .cur{display:none}
+}
+@media print{
+  .nav,.cta,.to-top,.cur{display:none !important}
+  .js .rv,.r,.ln>span,.stat-n.big,.js figure .val,.js figure .grid{opacity:1 !important;transform:none !important;animation:none !important}
+  .js .bh,.js .bv{transform:none !important}
+  body,.band,.band-tint,.hero,.tile,.opp,figure,.table-shell,.callout,thead th,tr.us td{background:#fff !important}
+  body,.hero,.hero h1,.hero .sub,.meta,.meta span,.stat-n,.stat-l,.stat-vs{color:#000 !important}
+  .band{padding-block:24px}
+  .sec-head{position:static}
+  figure,.tile,.opp,.tl-i,.table-shell{break-inside:avoid}
+  .refs{columns:1}
+}
+</style>
+<script>document.documentElement.className+=" js";</script>
+</head>
+<body id="top">
+
+<header class="nav" data-chrome="1">
+  <div class="wrap">
+    <div class="brand">
+      <a class="brand-link" href="#top">10XCREW</a>
+      <p class="brand-sub">Channel Review · September 2026</p>
+    </div>
+    <nav class="nav-wrap" aria-label="Sections">
+      <button class="nav-toggle" type="button" id="navToggle" aria-expanded="false" aria-controls="navList">
+        <span class="bars" aria-hidden="true"><i></i><i></i><i></i></span>Sections
+      </button>
+      <ul class="nav-list" id="navList">
+        <li><a class="nav-link" href="#summary">Summary</a></li>
+        <li><a class="nav-link" href="#status">Channels</a></li>
+        <li><a class="nav-link" href="#competitors">Competitors</a></li>
+        <li><a class="nav-link" href="#opportunities">Opportunities</a></li>
+        <li><a class="nav-link" href="#plan">Plan</a></li>
+        <li><a class="nav-link" href="#sources">Sources</a></li>
+      </ul>
+      <span class="nav-ink" aria-hidden="true"></span>
+    </nav>
+  </div>
+  <span class="progress" id="progress" aria-hidden="true"></span>
+</header>
+
+<header class="hero">
+  <div class="wrap">
+    <p class="eyebrow r r1">Internal report · Marketing &amp; Communication · 14 September 2026</p>
+    <h1><span class="ln"><span>10XCREW on LinkedIn,</span></span> <span class="ln"><span>Instagram and YouTube</span></span></h1>
+    <p class="sub r r2">Where we stand, what six direct competitors do differently, and five things we can start with in the next four weeks — measured on public pages on Monday 14 September 2026.</p>
+
+    <div class="stat r r3" data-chrome="1">
+      <div class="stat-col">
+        <p class="stat-n big">6</p>
+        <p class="stat-l">Median reactions per 10XCREW post</p>
+      </div>
+      <p class="stat-vs">vs</p>
+      <div class="stat-col">
+        <p class="stat-n small">12</p>
+        <p class="stat-l">Median at the six direct competitors</p>
+      </div>
+    </div>
+
+    <ul class="cta r r4" data-chrome="1">
+      <li><a class="btn btn-1" href="#summary">Read the summary</a></li>
+      <li><a class="btn btn-2" href="#plan">See the plan</a></li>
+    </ul>
+
+    <div class="meta r r5">
+      <div><b>For</b><span>Linda Tri Meilindayanti, Marketing &amp; Communications Specialist · Emile Valkestijn, CCO</span></div>
+      <div><b>By</b><span>Matthew Alberts, Intern Marketing &amp; Communication</span></div>
+      <div><b>Goal it serves</b><span>“Increase 10XCREW’s visibility as an agency and strengthen our position as a thought leader.”</span></div>
+      <div><b>Scope and status</b><span>LinkedIn, Instagram, YouTube. TikTok out of scope. Public data only; cells marked <em>needs login</em> require admin access.</span></div>
+    </div>
+  </div>
+</header>
+
+<main>
+
+<section id="summary" class="band" aria-labelledby="h-summary">
+  <div class="wrap">
+    <span class="sec-sentinel" aria-hidden="true"></span>
+    <div class="sec-head">
+      <div class="sec-marks">
+        <p class="sec-num">01</p>
+        <p class="sec-of" data-chrome="1">Section 1 of 6</p>
+        <span class="sec-rule" aria-hidden="true"></span>
+      </div>
+      <h2 id="h-summary">Summary</h2>
+    </div>
+    <ol class="summary">
+      <li class="rv">LinkedIn is our biggest channel: 3,385 followers, 7 own posts in the last 8 weeks, a median of 6 reactions per post, nothing posted since 31 August. The six direct competitors sit at a median of 12 reactions per post.</li>
+      <li class="rv">Not one of our updates comes from a named person. At ChannelMojo the whole feed is people (median 50 reactions on 2,094 followers); at team5pm, posts by people reach 35 and 71 against 6–27 for the company voice.</li>
+      <li class="rv">Our one post above 10 reactions (32) is the only one with video, a partner and tagged colleagues: the Pacvue day at the office.</li>
+      <li class="rv">The LinkedIn page tells two different stories: English visitors read a D2C text, Dutch visitors an older Amazon text. Neither carries the website’s line “The D2C Performance Agency”.</li>
+      <li class="rv">Instagram is split. The website links only to @10xcrew_europe, which is not visible without login; the working account @10xcrew_agency (71 followers, 75 posts) is linked from nowhere.</li>
+      <li class="rv">YouTube: 23 subscribers, 28 videos, 14,996 views. The last 10 uploads are all Shorts; a birth-year joke has 2,775 views, the Pacvue expert Short 56, the Amefa workshop 11.</li>
+      <li class="rv">Competitors look like thought leaders through four things: named people, an own event series, own research data, and client cases with numbers. Seven of the ten agencies compared run a newsletter; we run none.</li>
+      <li class="rv">We already own the material — an expert-group chair, a jury seat, bol Gold Partner status, five named client cases with results — and hardly show it. The proposal: fix channel identity first, then let named experts and cases carry LinkedIn, and re-use that content on Instagram and YouTube.</li>
+    </ol>
+    <a class="to-top" href="#top" data-chrome="1">10XCREW</a>
+  </div>
+</section>
+
+<section id="status" class="band" aria-labelledby="h-status">
+  <div class="wrap">
+    <span class="sec-sentinel" aria-hidden="true"></span>
+    <div class="sec-head">
+      <div class="sec-marks">
+        <p class="sec-num">02</p>
+        <p class="sec-of" data-chrome="1">Section 2 of 6</p>
+        <span class="sec-rule" aria-hidden="true"></span>
+      </div>
+      <h2 id="h-status">Where 10XCREW stands per channel</h2>
+    </div>
+
+    <div class="tiles">
+      <div class="tile rv">
+        <div class="ch"><span>LinkedIn</span><span class="handle">linkedin.com/company/10xcrew</span></div>
+        <div class="kpi">3,385<small>followers</small></div>
+        <dl><dt>Own posts, last 8 weeks</dt><dd>7</dd><dt>Median reactions per post</dt><dd>6</dd><dt>Posts by named people</dt><dd>0</dd><dt>Last post</dt><dd>31 Aug</dd><dt>Impressions, engagement rate</dt><dd class="na">needs login</dd></dl>
+        <div class="warn">Two “About” texts live on the page: an English D2C text and an older Dutch Amazon text.</div>
+      </div>
+      <div class="tile rv">
+        <div class="ch"><span>Instagram</span><span class="handle">@10xcrew_agency</span></div>
+        <div class="kpi">71<small>followers</small></div>
+        <dl><dt>Following</dt><dd>156</dd><dt>Posts, total</dt><dd>75</dd><dt>Linked from 10xcrew.com</dt><dd>no</dd><dt>@10xcrew_europe (linked from site)</dt><dd class="na">not visible</dd><dt>Likes, comments, bio</dt><dd class="na">needs login</dd></dl>
+        <div class="warn">Six confirmed competitor accounts: median 2,376.5 followers. The two marketplace specialists have no confirmed account at all.</div>
+      </div>
+      <div class="tile rv">
+        <div class="ch"><span>YouTube</span><span class="handle">@10xcreweurope</span></div>
+        <div class="kpi">23<small>subscribers</small></div>
+        <dl><dt>Videos · total views</dt><dd>28 · 14,996</dd><dt>Uploads, last 8 weeks</dt><dd>2</dd><dt>Shorts in last 10 uploads</dt><dd>10 of 10</dd><dt>Median views, last 10</dt><dd>526</dd><dt>Median likes · comments</dt><dd>4 · 0</dd></dl>
+        <div class="warn">Highest views: office humour. Lowest: the two uploads with real expert content.</div>
+      </div>
+    </div>
+
+    <div class="prose rv">
+      <p>All figures were read from the public pages on Monday 14 September 2026 between 13:47 and 14:30, without logging in. “Last 8 weeks” runs from Monday 20 July to Monday 14 September 2026. Every number has a source file with the raw page and the exact time of the request.</p>
+    </div>
+
+    <h3 class="sub-head rv">LinkedIn — three observations</h3>
+    <div class="obs">
+      <div class="rv"><h4>Rhythm breaks</h4><p>Seven own posts in eight weeks (0.9 a week), an empty week from 7 September and fourteen days of silence on the measurement date. The internal norm is one to two posts a week.</p></div>
+      <div class="rv"><h4>People beat the company voice, even on our own page</h4><p>Insight and document posts reach 4–6 reactions, the post with Emile Valkestijn on the jury 8; the Pacvue training video with twelve tagged colleagues reached 32. The post of 17 August (“7 in 10 shoppers abandon their cart”) links to the contact page, not to a blog.</p></div>
+      <div class="rv"><h4>The page tells an old story — twice</h4><p>Tagline “Creating online solutions for growth.” English visitors get an About text on D2C strategy; Dutch visitors get “Kickstart and grow your Amazon and online direct sales.” Growth of +2 followers in eight days is below the “do-nothing” line for pages of this size.</p></div>
+    </div>
+
+    <h3 class="sub-head rv">Instagram — three observations</h3>
+    <div class="obs">
+      <div class="rv"><h4>Two handles, one dead link</h4><p>Header, footer and /visit-our-channels/ link to @10xcrew_europe. Six requests, in two rounds, returned the same error page as a made-up account name, so whether it still exists cannot be settled from outside.</p></div>
+      <div class="rv"><h4>The working account is hidden</h4><p>@10xcrew_agency has 71 followers, follows 156 accounts and holds 75 posts. No page on 10xcrew.com links to it.</p></div>
+      <div class="rv"><h4>Content still unjudged</h4><p>Bio, last post date, likes and comments are only visible with a logged-in account. The internal engagement benchmark of 0.48% cannot be applied yet.</p></div>
+    </div>
+
+    <h3 class="sub-head rv">YouTube — three observations</h3>
+    <div class="obs">
+      <div class="rv"><h4>Low rhythm, Shorts only</h4><p>Two uploads in eight weeks (23 July, 31 August); the last ten uploads are all Shorts of 13–56 seconds.</p></div>
+      <div class="rv"><h4>Views follow humour, not expertise</h4><p>“what year did you born” 2,775 views, “Social commerce” 1,932, “office gossip” 780. The Pacvue expert Short has 56 views and the Amefa onboarding workshop 11. Likes: median 4. Comments: none on any of the ten.</p></div>
+      <div class="rv"><h4>Presentation errors</h4><p>Titles in lower case, a language error in the most-viewed title, a client name without a capital (“workshop with amefa”), duplicated hashtags, a typo in a hashtag (#10XCRE). Who watches, and from where, only YouTube Studio can tell.</p></div>
+    </div>
+
+    <figure class="rv">
+      <p class="fig-title">10XCREW on YouTube: views of the last 10 uploads</p>
+      <p class="fig-sub">Sorted by views. Measured 14 September 2026 from the channel’s RSS feed.</p>
+      <div class="legend"><span><i style="background:var(--c-us)"></i>Office humour</span><span><i style="background:var(--c-them)"></i>Business or expert content</span></div>
+      <svg viewBox="0 0 760 310" role="img" aria-label="Bar chart of views per upload; humour uploads lead, expert uploads trail">
+        <line class="grid" x1="60" x2="740" y1="40" y2="40"/><text class="axis" x="52" y="44" text-anchor="end">3,000</text>
+        <line class="grid" x1="60" x2="740" y1="106.7" y2="106.7"/><text class="axis" x="52" y="110.7" text-anchor="end">2,000</text>
+        <line class="grid" x1="60" x2="740" y1="173.3" y2="173.3"/><text class="axis" x="52" y="177.3" text-anchor="end">1,000</text>
+        <line class="base" x1="60" x2="740" y1="240" y2="240"/><text class="axis" x="52" y="244" text-anchor="end">0</text>
+        <g class="bar"><rect class="bv" x="70" y="55" width="48" height="185" rx="3" fill="var(--c-us)"><title>what year did you born — 2,775 views (16 Jun 2026)</title></rect><text class="val" x="94" y="49" text-anchor="middle">2,775</text><text class="axis" x="94" y="258" text-anchor="middle">what year did</text><text class="axis" x="94" y="271" text-anchor="middle">you born</text></g>
+        <g class="bar"><rect class="bv" x="140" y="111.2" width="48" height="128.8" rx="3" fill="var(--c-them)"><title>Social commerce — 1,932 views (23 Jul 2026)</title></rect><text class="val" x="164" y="105" text-anchor="middle">1,932</text><text class="axis" x="164" y="258" text-anchor="middle">Social</text><text class="axis" x="164" y="271" text-anchor="middle">commerce</text></g>
+        <g class="bar"><rect class="bv" x="210" y="148.1" width="48" height="91.9" rx="3" fill="var(--c-them)"><title>TikTok shop is launching soon!!! — 1,379 views (2 Jun 2026)</title></rect><text class="val" x="234" y="142" text-anchor="middle">1,379</text><text class="axis" x="234" y="258" text-anchor="middle">TikTok Shop</text><text class="axis" x="234" y="271" text-anchor="middle">launch</text></g>
+        <g class="bar"><rect class="bv" x="280" y="188" width="48" height="52" rx="3" fill="var(--c-us)"><title>office gossip — 780 views (27 May 2026)</title></rect><text class="val" x="304" y="182" text-anchor="middle">780</text><text class="axis" x="304" y="258" text-anchor="middle">office</text><text class="axis" x="304" y="271" text-anchor="middle">gossip</text></g>
+        <g class="bar"><rect class="bv" x="350" y="198.5" width="48" height="41.5" rx="3" fill="var(--c-them)"><title>10XCREW — 623 views (3 Jun 2026)</title></rect><text class="val" x="374" y="192.5" text-anchor="middle">623</text><text class="axis" x="374" y="258" text-anchor="middle">10XCREW</text><text class="axis" x="374" y="271" text-anchor="middle">intro</text></g>
+        <g class="bar"><rect class="bv" x="420" y="211.4" width="48" height="28.6" rx="3" fill="var(--c-us)"><title>which department works the hardest ? — 429 views (18 Jul 2026)</title></rect><text class="val" x="444" y="205.4" text-anchor="middle">429</text><text class="axis" x="444" y="258" text-anchor="middle">which dept.</text><text class="axis" x="444" y="271" text-anchor="middle">works hardest</text></g>
+        <g class="bar"><rect class="bv" x="490" y="222.5" width="48" height="17.5" rx="3" fill="var(--c-them)"><title>Meta ads — 262 views (26 May 2026)</title></rect><text class="val" x="514" y="216.5" text-anchor="middle">262</text><text class="axis" x="514" y="258" text-anchor="middle">Meta ads</text></g>
+        <g class="bar"><rect class="bv" x="560" y="236.1" width="48" height="3.9" rx="1.5" fill="var(--c-us)"><title>big fan for the office — 58 views (10 Jun 2026)</title></rect><text class="val" x="584" y="230" text-anchor="middle">58</text><text class="axis" x="584" y="258" text-anchor="middle">big fan for</text><text class="axis" x="584" y="271" text-anchor="middle">the office</text></g>
+        <g class="bar"><rect class="bv" x="630" y="236.3" width="48" height="3.7" rx="1.5" fill="var(--c-them)"><title>A Day with @PacvueOfficial — 56 views (31 Aug 2026)</title></rect><text class="val" x="654" y="230" text-anchor="middle">56</text><text class="axis" x="654" y="258" text-anchor="middle">Pacvue</text><text class="axis" x="654" y="271" text-anchor="middle">day</text></g>
+        <g class="bar"><rect class="bv" x="700" y="239.3" width="40" height="0.7" fill="var(--c-them)"><title>workshop with amefa — 11 views (29 May 2026)</title></rect><text class="val" x="720" y="233" text-anchor="middle">11</text><text class="axis" x="720" y="258" text-anchor="middle">Amefa</text><text class="axis" x="720" y="271" text-anchor="middle">workshop</text></g>
+        <text class="axis" x="60" y="300">Uploads 26 May – 31 Aug 2026 · all ten are Shorts · comments on all ten: 0</text>
+      </svg>
+      <figcaption>The two uploads with the most expert substance — the Pacvue retail-media day and the Amefa onboarding workshop — are the two least viewed. Views alone do not say who watched; the Shorts feed serves a random audience, YouTube Studio would show the traffic sources.</figcaption>
+    </figure>
+    <a class="to-top" href="#top" data-chrome="1">10XCREW</a>
+  </div>
+</section>
+
+<section id="competitors" class="band" aria-labelledby="h-competitors">
+  <div class="wrap">
+    <span class="sec-sentinel" aria-hidden="true"></span>
+    <div class="sec-head">
+      <div class="sec-marks">
+        <p class="sec-num">03</p>
+        <p class="sec-of" data-chrome="1">Section 3 of 6</p>
+        <span class="sec-rule" aria-hidden="true"></span>
+      </div>
+      <h2 id="h-competitors">What the competitors do</h2>
+    </div>
+
+    <div class="prose rv">
+      <p>Six direct competitors were chosen from the ten Dutch and Belgian agencies in the competitor overview: marketplace and social-commerce agencies that serve the same brands on bol, Amazon and TikTok Shop. LinkedIn was measured on the public company pages (the “Updates” block shows at most ten posts, so some counts are lower bounds, marked ≥). Instagram counts come from the public profile preview; YouTube from each channel’s About page and RSS feed.</p>
+    </div>
+
+    <div class="table-shell rv">
+      <div class="table-wrap" tabindex="0">
+      <table class="comp">
+        <thead><tr><th>Agency</th><th class="num">LinkedIn followers</th><th class="num">Own posts, 8 wks</th><th class="num">Median reactions</th><th>Named people in feed</th><th>Instagram (followers · posts)</th><th>YouTube (subscribers · videos · views)</th></tr></thead>
+        <tbody>
+          <tr class="us"><td>10XCREW</td><td class="num">3,385</td><td class="num">7</td><td class="num">6</td><td>No</td><td>@10xcrew_agency 71 · 75</td><td>23 · 28 · 14,996</td></tr>
+          <tr><td>Follo (incl. Brandsom)</td><td class="num">4,666</td><td class="num">3</td><td class="num">12</td><td>Yes, in all three (Stijn Bergmans, Mark van Hattum)</td><td>@folloagency 1,571 · 70</td><td>151 · 119 · 19,375 — 0 uploads in 8 weeks</td></tr>
+          <tr><td>ChannelMojo</td><td class="num">2,094</td><td class="num">0</td><td class="num"><span class="na">no own posts</span></td><td>Entire feed is reposts of people: 7 in 8 weeks, 9 visible, median 50 reactions</td><td>@channelmojo 0 · 0 <span class="na">ownership unverified</span></td><td><span class="na">no channel found</span></td></tr>
+          <tr><td>Brightways</td><td class="num">703</td><td class="num">≥ 3</td><td class="num">5</td><td>Yes (Ad Meisen, 2 reposts)</td><td>@brightways.nl 0 · 0 <span class="na">ownership unverified</span></td><td><span class="na">no channel found</span></td></tr>
+          <tr><td>GoSpooky</td><td class="num">18,692</td><td class="num">≥ 8</td><td class="num">21</td><td>Yes (Liam Tjoa 93, Tim van der Wiel 33)</td><td>@gospooky 7,200 · 343</td><td>@gospookyhq 11 · 4 · 37 <span class="na">unverified</span></td></tr>
+          <tr><td>Fightclub</td><td class="num">6,381</td><td class="num">7</td><td class="num">8</td><td>Partly: employee in video (Eric Beekman)</td><td>@fightclubagency 2,196 · 456</td><td>@fightclubbrandperformancea9535 19 · 38 (linked from the site’s podcast page; detail measurement pending)</td></tr>
+          <tr><td>team5pm</td><td class="num">10,178</td><td class="num">≥ 8</td><td class="num">20.5</td><td>Yes (Zaid El Ouardani 71, Frank de Wit 35)</td><td>@team5pm 2,987 · 661</td><td>220 · 74 · 112,794 — 6 uploads in 8 weeks</td></tr>
+          <tr><td><em>Median of the six</em></td><td class="num">5,523.5</td><td class="num">≥ 5</td><td class="num">12</td><td></td><td>2,376.5 (six confirmed accounts incl. reserves)</td><td></td></tr>
+        </tbody>
+      </table>
+      </div>
+    </div>
+
+    <figure class="rv">
+      <p class="fig-title">Median reactions per own LinkedIn post, last 8 weeks</p>
+      <p class="fig-sub">Company-page posts only; reposts of people excluded. ChannelMojo posted nothing as a company in this period.</p>
+      <svg viewBox="0 0 760 262" role="img" aria-label="Horizontal bar chart: GoSpooky 21, team5pm 20.5, Follo 12, Fightclub 8, 10XCREW 6, Brightways 5">
+        <g class="axis"><line class="grid" x1="130" x2="130" y1="8" y2="222"/><line class="grid" x1="250" x2="250" y1="8" y2="222"/><line class="grid" x1="370" x2="370" y1="8" y2="222"/><line class="grid" x1="490" x2="490" y1="8" y2="222"/><line class="grid" x1="610" x2="610" y1="8" y2="222"/><line class="grid" x1="730" x2="730" y1="8" y2="222"/>
+        <text x="130" y="240" text-anchor="middle">0</text><text x="250" y="240" text-anchor="middle">5</text><text x="370" y="240" text-anchor="middle">10</text><text x="490" y="240" text-anchor="middle">15</text><text x="610" y="240" text-anchor="middle">20</text><text x="730" y="240" text-anchor="middle">25</text></g>
+        <g class="bar"><text class="lbl" x="120" y="30" text-anchor="end">GoSpooky</text><rect class="bh" x="130" y="17" width="504" height="18" rx="3" fill="var(--c-them)"><title>GoSpooky — median 21 (8 own posts)</title></rect><text class="val" x="642" y="31">21</text></g>
+        <g class="bar"><text class="lbl" x="120" y="64" text-anchor="end">team5pm</text><rect class="bh" x="130" y="51" width="492" height="18" rx="3" fill="var(--c-them)"><title>team5pm — median 20.5 (8 own posts)</title></rect><text class="val" x="630" y="65">20.5</text></g>
+        <g class="bar"><text class="lbl" x="120" y="98" text-anchor="end">Follo</text><rect class="bh" x="130" y="85" width="288" height="18" rx="3" fill="var(--c-them)"><title>Follo — median 12 (3 own posts)</title></rect><text class="val" x="426" y="99">12</text></g>
+        <g class="bar"><text class="lbl" x="120" y="132" text-anchor="end">Fightclub</text><rect class="bh" x="130" y="119" width="192" height="18" rx="3" fill="var(--c-them)"><title>Fightclub — median 8 (7 own posts)</title></rect><text class="val" x="330" y="133">8</text></g>
+        <g class="bar"><text class="lbl" x="120" y="166" text-anchor="end" style="fill:var(--orange-ink)">10XCREW</text><rect class="bh" x="130" y="153" width="144" height="18" rx="3" fill="var(--c-us)"><title>10XCREW — median 6 (7 own posts)</title></rect><text class="val" x="282" y="167">6</text></g>
+        <g class="bar"><text class="lbl" x="120" y="200" text-anchor="end">Brightways</text><rect class="bh" x="130" y="187" width="120" height="18" rx="3" fill="var(--c-them)"><title>Brightways — median 5 (3 own posts visible)</title></rect><text class="val" x="258" y="201">5</text></g>
+        <line class="base" x1="130" x2="130" y1="8" y2="222"/>
+        <text class="axis" x="130" y="258">Median of the six competitors: 12 · GoSpooky and team5pm counts are lower bounds (only 10 updates visible)</text>
+      </svg>
+      <figcaption>10XCREW posts about as often as the competitors (7 in 8 weeks) and gets half the reactions per post. Frequency is not the gap; the format and the sender are.</figcaption>
+    </figure>
+
+    <figure class="rv">
+      <p class="fig-title">LinkedIn followers, 14 September 2026</p>
+      <p class="fig-sub">Public company pages. Follower count did not predict activity: e-tailize (19,929) posted nothing in 8 weeks.</p>
+      <svg viewBox="0 0 760 292" role="img" aria-label="Horizontal bar chart of LinkedIn followers for seven agencies">
+        <g class="axis"><line class="grid" x1="130" x2="130" y1="8" y2="256"/><line class="grid" x1="280" x2="280" y1="8" y2="256"/><line class="grid" x1="430" x2="430" y1="8" y2="256"/><line class="grid" x1="580" x2="580" y1="8" y2="256"/><line class="grid" x1="730" x2="730" y1="8" y2="256"/>
+        <text x="130" y="274" text-anchor="middle">0</text><text x="280" y="274" text-anchor="middle">5,000</text><text x="430" y="274" text-anchor="middle">10,000</text><text x="580" y="274" text-anchor="middle">15,000</text><text x="730" y="274" text-anchor="middle">20,000</text></g>
+        <g class="bar"><text class="lbl" x="120" y="30" text-anchor="end">GoSpooky</text><rect class="bh" x="130" y="17" width="560.8" height="18" rx="3" fill="var(--c-them)"><title>GoSpooky — 18,692 followers</title></rect><text class="val" x="698" y="31">18,692</text></g>
+        <g class="bar"><text class="lbl" x="120" y="64" text-anchor="end">team5pm</text><rect class="bh" x="130" y="51" width="305.3" height="18" rx="3" fill="var(--c-them)"><title>team5pm — 10,178 followers</title></rect><text class="val" x="443" y="65">10,178</text></g>
+        <g class="bar"><text class="lbl" x="120" y="98" text-anchor="end">Fightclub</text><rect class="bh" x="130" y="85" width="191.4" height="18" rx="3" fill="var(--c-them)"><title>Fightclub — 6,381 followers</title></rect><text class="val" x="329" y="99">6,381</text></g>
+        <g class="bar"><text class="lbl" x="120" y="132" text-anchor="end">Follo</text><rect class="bh" x="130" y="119" width="140" height="18" rx="3" fill="var(--c-them)"><title>Follo — 4,666 followers</title></rect><text class="val" x="278" y="133">4,666</text></g>
+        <g class="bar"><text class="lbl" x="120" y="166" text-anchor="end" style="fill:var(--orange-ink)">10XCREW</text><rect class="bh" x="130" y="153" width="101.6" height="18" rx="3" fill="var(--c-us)"><title>10XCREW — 3,385 followers</title></rect><text class="val" x="240" y="167">3,385</text></g>
+        <g class="bar"><text class="lbl" x="120" y="200" text-anchor="end">ChannelMojo</text><rect class="bh" x="130" y="187" width="62.8" height="18" rx="3" fill="var(--c-them)"><title>ChannelMojo — 2,094 followers</title></rect><text class="val" x="201" y="201">2,094</text></g>
+        <g class="bar"><text class="lbl" x="120" y="234" text-anchor="end">Brightways</text><rect class="bh" x="130" y="221" width="21.1" height="18" rx="3" fill="var(--c-them)"><title>Brightways — 703 followers</title></rect><text class="val" x="159" y="235">703</text></g>
+        <line class="base" x1="130" x2="130" y1="8" y2="256"/>
+      </svg>
+      <figcaption>10XCREW sits just under the median of the six (5,523.5). The gap to GoSpooky and team5pm is a social-commerce gap: both post daily-ish, with people, video and client cases.</figcaption>
+    </figure>
+
+    <h3 class="sub-head rv">Five patterns</h3>
+    <div class="obs">
+      <div class="rv"><h4>Named people outperform the company voice</h4><p>ChannelMojo’s feed is entirely reposts of its people: 7 in 8 weeks (9 visible), median 50 reactions over those nine, top 155, on 2,094 followers. At team5pm, posts by Zaid El Ouardani (71) and Frank de Wit (35) beat every company post (6–27).</p></div>
+      <div class="rv"><h4>Follower count does not predict activity</h4><p>e-tailize has 19,929 followers and posted last on 19 June. DEPT, at 199,164 followers, gets 56 reactions on a regular post. Reach is earned per post.</p></div>
+      <div class="rv"><h4>Own events are the strongest thought-leadership format</h4><p>Five of the ten agencies show an event series on their own site: FolloTalks, GoSpooky Invites, Fightclub Ringside, DEPT Future Club and Adwise N3YID; ChannelMojo’s Marketplace Meetups live only on LinkedIn. None of them is in Eindhoven or Brainport.</p></div>
+      <div class="rv"><h4>Proof beats claims</h4><p>Brightways’ Maesy case (+33% revenue year on year, TACOS under 9%) reached 25 reactions against 3–5 for its other posts. GoSpooky’s Stichting Reclame Code case posts its numbers in the copy (217K+ landing-page views, CTR 6.9% vs 3.3%). team5pm, DEPT and Adwise publish own reports and whitepapers.</p></div>
+      <div class="rv"><h4>Instagram and YouTube follow the business model</h4><p>The social-commerce agencies keep large Instagram accounts (GoSpooky 343 posts, Fightclub 456, team5pm 661); the marketplace specialists ChannelMojo and Brightways have no confirmed account on either platform. YouTube is small for everyone: team5pm, the largest, has 220 subscribers — but posts client cases with results in every description.</p></div>
+    </div>
+
+    <h3 class="sub-head rv">Thought-leadership signals on the websites</h3>
+    <div class="table-shell rv">
+      <div class="table-wrap" tabindex="0">
+      <table class="matrix">
+        <thead><tr><th>Agency</th><th>Blog</th><th>Cases with numbers</th><th>Own event series</th><th>Own report</th><th>Podcast</th><th>Webinars</th><th>Newsletter</th><th>Instagram linked</th><th>YouTube linked</th></tr></thead>
+        <tbody>
+          <tr class="us"><td>10XCREW</td><td><span class="dot"></span></td><td><span class="dot"></span></td><td><span class="dot no"></span></td><td><span class="dot no"></span></td><td><span class="dot no"></span></td><td><span class="dot"></span></td><td><span class="dot no"></span></td><td><span class="dot"></span></td><td><span class="dot"></span></td></tr>
+          <tr><td>Follo</td><td><span class="dot"></span></td><td><span class="dot"></span></td><td><span class="dot"></span></td><td><span class="dot no"></span></td><td><span class="dot"></span></td><td><span class="dot"></span></td><td><span class="dot"></span></td><td><span class="dot"></span></td><td><span class="dot"></span></td></tr>
+          <tr><td>ChannelMojo</td><td><span class="dot no"></span></td><td><span class="dot"></span></td><td><span class="dot no"></span></td><td><span class="dot no"></span></td><td><span class="dot no"></span></td><td><span class="dot no"></span></td><td><span class="dot no"></span></td><td><span class="dot no"></span></td><td><span class="dot no"></span></td></tr>
+          <tr><td>Brightways</td><td><span class="dot"></span></td><td><span class="dot"></span></td><td><span class="dot no"></span></td><td><span class="dot no"></span></td><td><span class="dot no"></span></td><td><span class="dot no"></span></td><td><span class="dot no"></span></td><td><span class="dot no"></span></td><td><span class="dot no"></span></td></tr>
+          <tr><td>e-tailize</td><td><span class="dot"></span></td><td><span class="dot no"></span></td><td><span class="dot no"></span></td><td><span class="dot no"></span></td><td><span class="dot no"></span></td><td><span class="dot no"></span></td><td><span class="dot no"></span></td><td><span class="dot no"></span></td><td><span class="dot no"></span></td></tr>
+          <tr><td>GoSpooky</td><td><span class="dot"></span></td><td><span class="dot"></span></td><td><span class="dot"></span></td><td><span class="dot no"></span></td><td><span class="dot no"></span></td><td><span class="dot no"></span></td><td><span class="dot"></span></td><td><span class="dot"></span></td><td><span class="dot no"></span></td></tr>
+          <tr><td>Fightclub</td><td><span class="dot"></span></td><td><span class="dot"></span></td><td><span class="dot"></span></td><td><span class="dot no"></span></td><td><span class="dot"></span></td><td><span class="dot"></span></td><td><span class="dot"></span></td><td><span class="dot"></span></td><td><span class="dot no"></span></td></tr>
+          <tr><td>Meezy</td><td><span class="dot"></span></td><td><span class="dot"></span></td><td><span class="dot no"></span></td><td><span class="dot no"></span></td><td><span class="dot no"></span></td><td><span class="dot no"></span></td><td><span class="dot"></span></td><td><span class="dot"></span></td><td><span class="dot no"></span></td></tr>
+          <tr><td>DEPT</td><td><span class="dot"></span></td><td><span class="dot"></span></td><td><span class="dot"></span></td><td><span class="dot"></span></td><td><span class="dot no"></span></td><td><span class="dot no"></span></td><td><span class="dot"></span></td><td><span class="dot"></span></td><td><span class="dot no"></span></td></tr>
+          <tr><td>Adwise</td><td><span class="dot"></span></td><td><span class="dot"></span></td><td><span class="dot"></span></td><td><span class="dot"></span></td><td><span class="dot"></span></td><td><span class="dot"></span></td><td><span class="dot"></span></td><td><span class="dot"></span></td><td><span class="dot"></span></td></tr>
+          <tr><td>team5pm</td><td><span class="dot"></span></td><td><span class="dot"></span></td><td><span class="dot no"></span></td><td><span class="dot"></span></td><td><span class="dot no"></span></td><td><span class="dot no"></span></td><td><span class="dot"></span></td><td><span class="dot"></span></td><td><span class="dot"></span></td></tr>
+          <tr><td><em>Agencies with the signal</em></td><td>9 of 10</td><td>9 of 10</td><td>5 of 10</td><td>3 of 10</td><td>3 of 10</td><td>3 of 10</td><td>7 of 10</td><td>7 of 10</td><td>3 of 10</td></tr>
+        </tbody>
+      </table>
+      </div>
+    </div>
+    <p class="foot rv">Filled dot = found on the agency’s own website on 14 September 2026, with URL and date in the source notes. Empty dot = not found in the pages retrieved; it may exist elsewhere (ChannelMojo’s Marketplace Meetups, for example, live only on LinkedIn). 10XCREW’s blog holds 87 posts in 2026, all signed “10XCREW team”; the site links Instagram to @10xcrew_europe.</p>
+    <a class="to-top" href="#top" data-chrome="1">10XCREW</a>
+  </div>
+</section>
+
+<section id="opportunities" class="band band-tint" aria-labelledby="h-opportunities">
+  <div class="wrap">
+    <span class="sec-sentinel" aria-hidden="true"></span>
+    <div class="sec-head">
+      <div class="sec-marks">
+        <p class="sec-num">04</p>
+        <p class="sec-of" data-chrome="1">Section 4 of 6</p>
+        <span class="sec-rule" aria-hidden="true"></span>
+      </div>
+      <h2 id="h-opportunities">What this means: five opportunities</h2>
+    </div>
+
+    <div class="prose rv"><p>These are recommendations drawn from the measurements above, not facts. Persona letters refer to the five buyer personas in our internal brief: <strong>A</strong> Marketplace Manager, <strong>B</strong> Head of E-commerce, <strong>C</strong> EMEA E-commerce Director, <strong>D</strong> Founder/CEO of a D2C scale-up, <strong>E</strong> Brand or marketing lead for social commerce.</p></div>
+
+    <div class="opps">
+      <div class="opp rv">
+        <h3>1 · Fix channel identity before adding volume</h3>
+        <dl>
+          <dt>What</dt><dd>Choose one official Instagram handle and link it from the website; give LinkedIn one About text in one language, with the tagline “The D2C Performance Agency”; correct YouTube titles and hashtags; repair the “[formidable id=3]” form on /visit-our-channels/.</dd>
+          <dt>Audience</dt><dd>All personas, at the moment they check the agency before making contact.</dd>
+          <dt>Effect</dt><dd>No dead links and no outdated positioning when a prospect clicks through from the site or from YouTube.</dd>
+          <dt>Measure</dt><dd>A monthly link check (every channel link on 10xcrew.com resolves); consultation requests from social traffic in GA4 <span class="na">needs login</span>.</dd>
+        </dl>
+      </div>
+      <div class="opp rv">
+        <h3>2 · Let named experts post, and repost them from the company page</h3>
+        <dl>
+          <dt>What</dt><dd>Emile Valkestijn (chair of the ShoppingTomorrow marketplace expert group, jury member of the bol Retail Media Awards 2026) and Marieke Verkoelen (Head of Social Commerce) post from their own profiles; the company page reposts.</dd>
+          <dt>Audience</dt><dd>A, B and C on LinkedIn.</dd>
+          <dt>Effect</dt><dd>Reactions above our company-page median of 6, following the ChannelMojo and team5pm pattern (median 50 and 53 on people’s posts).</dd>
+          <dt>Measure</dt><dd>Reactions and comments per person post against the median of 6; LinkedIn follower growth per month <span class="na">needs login</span>.</dd>
+        </dl>
+      </div>
+      <div class="opp rv">
+        <h3>3 · Turn client cases with numbers into a recurring LinkedIn document post</h3>
+        <dl>
+          <dt>What</dt><dd>One case a month as a document post, from the five named cases on our site (Stanley 1913: +169% visibility, 18× revenue growth; Bowers &amp; Wilkins; Signify – Light Gallery; Body &amp; Fit; Prénatal). None of them appeared in the last ten LinkedIn updates. A short version with the expert on camera runs as an Instagram reel and a YouTube Short.</dd>
+          <dt>Audience</dt><dd>B and D.</dd>
+          <dt>Effect</dt><dd>More reactions than our insight posts (4–6), as Brightways saw with its KPI case (25 vs 3–5). Document posts are the best-performing LinkedIn format in the benchmark we use (7.00% engagement, Socialinsider).</dd>
+          <dt>Measure</dt><dd>Reactions per case post; engagement rate per format in Page Analytics and YouTube traffic sources for the Short <span class="na">needs login</span>.</dd>
+        </dl>
+      </div>
+      <div class="opp rv">
+        <h3>4 · Start a small, recurring peer event in Eindhoven</h3>
+        <dl>
+          <dt>What</dt><dd>A quarterly session for marketplace and e-commerce leads of Brabant brands, with a partner; announce it and post a recap with named people. The Pacvue day (32 reactions, our best post) shows the format already works for us.</dd>
+          <dt>Audience</dt><dd>A and B.</dd>
+          <dt>Effect</dt><dd>A reason for people outside 10XCREW to mention and repost us; none of the ten agencies compared has an event in Eindhoven or Brainport.</dd>
+          <dt>Measure</dt><dd>Registrations; reactions on announcement and recap; number of external posts that mention 10XCREW.</dd>
+        </dl>
+      </div>
+      <div class="opp rv">
+        <h3>5 · Publish one own dataset per quarter, and start a newsletter to carry it</h3>
+        <dl>
+          <dt>What</dt><dd>A short benchmark that connects marketplaces and social commerce, built on the expert group’s knowledge or on own measurements, published on the blog with a LinkedIn document post. Seven of the ten competitors run a newsletter; we have 87 blog posts this year and no way to send them.</dd>
+          <dt>Audience</dt><dd>B, C and trade journalists.</dd>
+          <dt>Effect</dt><dd>A number others cite, as team5pm does with its CMO survey; a list we own instead of an algorithm we rent.</dd>
+          <dt>Measure</dt><dd>External mentions and reposts; newsletter sign-ups; referral traffic to the dataset page in GA4 <span class="na">needs login</span>.</dd>
+        </dl>
+      </div>
+    </div>
+    <a class="to-top" href="#top" data-chrome="1">10XCREW</a>
+  </div>
+</section>
+
+<section id="plan" class="band" aria-labelledby="h-plan">
+  <div class="wrap">
+    <span class="sec-sentinel" aria-hidden="true"></span>
+    <div class="sec-head">
+      <div class="sec-marks">
+        <p class="sec-num">05</p>
+        <p class="sec-of" data-chrome="1">Section 5 of 6</p>
+        <span class="sec-rule" aria-hidden="true"></span>
+      </div>
+      <h2 id="h-plan">Proposed next steps, 28 September – 22 October</h2>
+    </div>
+
+    <div class="prose rv"><p>Nothing goes live without Linda’s approval. Weeks follow Matthew’s working days, Monday to Thursday.</p></div>
+
+    <div class="tl-head rv"><p>Week</p><p>Dates (2026)</p></div>
+    <ol class="tl">
+      <li class="tl-i rv">
+        <div><p class="tl-n">1</p><p class="tl-d">28 Sep – 1 Oct</p></div>
+        <div class="tl-body">
+          <div class="tl-f"><p class="k">Steps</p><p class="v">Decide the official Instagram handle; draft one LinkedIn About text and the new tagline; list the YouTube titles to correct; report the broken form on /visit-our-channels/.</p></div>
+          <div class="tl-f"><p class="k">Owner</p><p class="v">Matthew drafts, Linda decides</p></div>
+          <div class="tl-f"><p class="k">Done when</p><p class="v">Decisions written down; site links fixed or ticket raised.</p></div>
+        </div>
+      </li>
+      <li class="tl-i rv">
+        <div><p class="tl-n">2</p><p class="tl-d">5 – 8 Oct</p></div>
+        <div class="tl-body">
+          <div class="tl-f"><p class="k">Steps</p><p class="v">Ask Emile and Marieke whether they want to post; write the first person post with each; draft case post #1 as a document post.</p></div>
+          <div class="tl-f"><p class="k">Owner</p><p class="v">Matthew drafts, Emile and Marieke approve</p></div>
+          <div class="tl-f"><p class="k">Done when</p><p class="v">Two person posts and one case post approved.</p></div>
+        </div>
+      </li>
+      <li class="tl-i rv">
+        <div><p class="tl-n">3</p><p class="tl-d">12 – 15 Oct</p></div>
+        <div class="tl-body">
+          <div class="tl-f"><p class="k">Steps</p><p class="v">Publish the approved posts on a fixed weekly day; cut one short video from the case for Instagram and YouTube; write a one-page event idea for Q1 2027.</p></div>
+          <div class="tl-f"><p class="k">Owner</p><p class="v">Linda publishes</p></div>
+          <div class="tl-f"><p class="k">Done when</p><p class="v">At least one LinkedIn post a week; event idea on Linda’s desk.</p></div>
+        </div>
+      </li>
+      <li class="tl-i rv">
+        <div><p class="tl-n">4</p><p class="tl-d">19 – 22 Oct</p></div>
+        <div class="tl-body">
+          <div class="tl-f"><p class="k">Steps</p><p class="v">Re-measure every number in section 2 on the same public pages and, with access, in Page Analytics, Meta Business Suite and YouTube Studio; compare with 14 September.</p></div>
+          <div class="tl-f"><p class="k">Owner</p><p class="v">Matthew</p></div>
+          <div class="tl-f"><p class="k">Done when</p><p class="v">Update sent to Linda and Emile with a before/after table.</p></div>
+        </div>
+      </li>
+    </ol>
+
+    <div class="callout rv"><p><strong>Access needed to finish the picture:</strong> read access to LinkedIn Page Analytics, Meta Business Suite Insights and YouTube Studio, and confirmation of which Instagram account is official. Those unlock every cell marked <em>needs login</em>.</p></div>
+    <a class="to-top" href="#top" data-chrome="1">10XCREW</a>
+  </div>
+</section>
+
+<section id="sources" class="band" aria-labelledby="h-sources">
+  <div class="wrap">
+    <span class="sec-sentinel" aria-hidden="true"></span>
+    <div class="sec-head">
+      <div class="sec-marks">
+        <p class="sec-num">06</p>
+        <p class="sec-of" data-chrome="1">Section 6 of 6</p>
+        <span class="sec-rule" aria-hidden="true"></span>
+      </div>
+      <h2 id="h-sources">Sources</h2>
+    </div>
+
+    <p class="foot rv">Channels outside scope, 14 September 2026: X @10X_CREW shows 0 followers and 53 posts, latest visible post “Apr 13” without a year. The Facebook page linked from the website exists; its counts are not visible without login. The TikTok account @10xcrew_agency exists with 0 videos. Benchmarks quoted from our internal brief (LinkedIn 5.20% average engagement, 24.5% yearly follower growth for pages of 1,000–5,000 followers, Instagram 0.48%) are to be checked at their original source before external use; the 7.00% for document posts is Socialinsider’s.</p>
+
+    <ul class="refs rv">
+      <li>10XCREW. (n.d.-a). <em>10XCREW</em> [LinkedIn company page]. LinkedIn. Retrieved September 14, 2026, from <a href="https://www.linkedin.com/company/10xcrew/" target="_blank" rel="noopener">https://www.linkedin.com/company/10xcrew/</a></li>
+      <li>10XCREW. (n.d.-b). <em>10XCREW (@10xcrew_agency)</em> [Instagram profile]. Instagram. Retrieved September 14, 2026, from <a href="https://www.instagram.com/10xcrew_agency/" target="_blank" rel="noopener">https://www.instagram.com/10xcrew_agency/</a></li>
+      <li>10XCREW. (n.d.-c). <em>@10xcrew_europe</em> [Instagram profile; not visible without login]. Instagram. Retrieved September 14, 2026, from <a href="https://www.instagram.com/10xcrew_europe/" target="_blank" rel="noopener">https://www.instagram.com/10xcrew_europe/</a></li>
+      <li>10XCREW. (n.d.-d). <em>Home</em>. Retrieved September 14, 2026, from <a href="https://10xcrew.com/" target="_blank" rel="noopener">https://10xcrew.com/</a></li>
+      <li>10XCREW. (n.d.-e). <em>Visit our channels</em>. Retrieved September 14, 2026, from <a href="https://10xcrew.com/visit-our-channels/" target="_blank" rel="noopener">https://10xcrew.com/visit-our-channels/</a></li>
+      <li>10XCREW. (n.d.-f). <em>Case study: Stanley 1913</em>. Retrieved September 14, 2026, from <a href="https://10xcrew.com/case-study-stanley-1913/" target="_blank" rel="noopener">https://10xcrew.com/case-study-stanley-1913/</a></li>
+      <li>10XCREW. (n.d.-g). <em>Posts</em> [Public WordPress REST API, 87 posts in 2026]. Retrieved September 14, 2026, from <a href="https://10xcrew.com/wp-json/wp/v2/posts" target="_blank" rel="noopener">https://10xcrew.com/wp-json/wp/v2/posts</a></li>
+      <li>10XCREW. (n.d.-h). <em>10XCREW (@10X_CREW)</em> [X profile]. X. Retrieved September 14, 2026, from <a href="https://x.com/10X_CREW" target="_blank" rel="noopener">https://x.com/10X_CREW</a></li>
+      <li>10XCREW. (2026a, August 18). <em>Something big from bol is back this year: the bol Retail Media Awards 2026</em> [LinkedIn post]. LinkedIn. <a href="https://www.linkedin.com/feed/update/urn:li:activity:7495463386869280768/" target="_blank" rel="noopener">https://www.linkedin.com/feed/update/urn:li:activity:7495463386869280768/</a></li>
+      <li>10XCREW. (2026b, August 31). <em>A little throwback to last Wednesday</em> [Video, LinkedIn post]. LinkedIn. <a href="https://www.linkedin.com/feed/update/urn:li:activity:7500161314170871808/" target="_blank" rel="noopener">https://www.linkedin.com/feed/update/urn:li:activity:7500161314170871808/</a></li>
+      <li>10XCREW Europe. (n.d.-a). <em>10XCREW Europe</em> [YouTube channel]. YouTube. Retrieved September 14, 2026, from <a href="https://www.youtube.com/@10xcreweurope/about" target="_blank" rel="noopener">https://www.youtube.com/@10xcreweurope/about</a></li>
+      <li>10XCREW Europe. (n.d.-b). <em>Video feed, channel UCMXUMltadPJyUJ2fYD6SMPQ</em> [RSS feed]. YouTube. Retrieved September 14, 2026, from <a href="https://www.youtube.com/feeds/videos.xml?channel_id=UCMXUMltadPJyUJ2fYD6SMPQ" target="_blank" rel="noopener">https://www.youtube.com/feeds/videos.xml?channel_id=UCMXUMltadPJyUJ2fYD6SMPQ</a></li>
+      <li>Adwise. (n.d.). <em>Adwise - Your Digital Brain</em> [LinkedIn company page]. LinkedIn. Retrieved September 14, 2026, from <a href="https://www.linkedin.com/company/adwise-yourdigitalbrain/" target="_blank" rel="noopener">https://www.linkedin.com/company/adwise-yourdigitalbrain/</a></li>
+      <li>Brightways. (n.d.-a). <em>Brightways - Marketplace Accelerators</em> [LinkedIn company page]. LinkedIn. Retrieved September 14, 2026, from <a href="https://www.linkedin.com/company/brightways-agency/" target="_blank" rel="noopener">https://www.linkedin.com/company/brightways-agency/</a></li>
+      <li>Brightways. (n.d.-b). <em>Maesy is ook dit jaar weer de baas op Bol</em> [Client case]. Retrieved September 14, 2026, from <a href="https://brightways.nl/cases/maesy" target="_blank" rel="noopener">https://brightways.nl/cases/maesy</a></li>
+      <li>ChannelMojo. (n.d.). <em>ChannelMojo</em> [LinkedIn company page]. LinkedIn. Retrieved September 14, 2026, from <a href="https://www.linkedin.com/company/channelmojo/" target="_blank" rel="noopener">https://www.linkedin.com/company/channelmojo/</a></li>
+      <li>DEPT. (n.d.). <em>DEPT®</em> [LinkedIn company page]. LinkedIn. Retrieved September 14, 2026, from <a href="https://www.linkedin.com/company/deptagency/" target="_blank" rel="noopener">https://www.linkedin.com/company/deptagency/</a></li>
+      <li>e-tailize. (n.d.). <em>e-tailize</em> [LinkedIn company page]. LinkedIn. Retrieved September 14, 2026, from <a href="https://www.linkedin.com/company/e-tailize/" target="_blank" rel="noopener">https://www.linkedin.com/company/e-tailize/</a></li>
+      <li>Fightclub. (n.d.-a). <em>FIGHTCLUB</em> [LinkedIn company page]. LinkedIn. Retrieved September 14, 2026, from <a href="https://www.linkedin.com/company/fightclub-agency/" target="_blank" rel="noopener">https://www.linkedin.com/company/fightclub-agency/</a></li>
+      <li>Fightclub. (n.d.-b). <em>PACKED Podcast by Fightclub</em>. Retrieved September 14, 2026, from <a href="https://fightclubagency.com/packed/podcast" target="_blank" rel="noopener">https://fightclubagency.com/packed/podcast</a></li>
+      <li>Follo. (n.d.-a). <em>Follo - Dare to lead</em> [LinkedIn company page]. LinkedIn. Retrieved September 14, 2026, from <a href="https://www.linkedin.com/company/folloagency/" target="_blank" rel="noopener">https://www.linkedin.com/company/folloagency/</a></li>
+      <li>Follo. (n.d.-b). <em>FOLLO - Datadriven Performance Marketing</em> [YouTube channel]. YouTube. Retrieved September 14, 2026, from <a href="https://www.youtube.com/@follo-agency/about" target="_blank" rel="noopener">https://www.youtube.com/@follo-agency/about</a></li>
+      <li>GoSpooky. (n.d.-a). <em>GoSpooky</em> [LinkedIn company page]. LinkedIn. Retrieved September 14, 2026, from <a href="https://www.linkedin.com/company/gospooky/" target="_blank" rel="noopener">https://www.linkedin.com/company/gospooky/</a></li>
+      <li>GoSpooky. (n.d.-b). <em>GoSpooky (@gospooky)</em> [Instagram profile]. Instagram. Retrieved September 14, 2026, from <a href="https://www.instagram.com/gospooky/" target="_blank" rel="noopener">https://www.instagram.com/gospooky/</a></li>
+      <li>Meezy. (n.d.). <em>Meezy.eu</em> [LinkedIn company page]. LinkedIn. Retrieved September 14, 2026, from <a href="https://www.linkedin.com/company/meezy-eu/" target="_blank" rel="noopener">https://www.linkedin.com/company/meezy-eu/</a></li>
+      <li>ShoppingTomorrow. (n.d.). <em>2026 | Winnen op marketplaces: van merk naar marktleider</em> [Expert group]. Thuiswinkel.org. Retrieved September 14, 2026, from <a href="https://www.shoppingtomorrow.nl/nl/themas/marketplaces/marketplaces/2026-winnen-op-marketplaces-van-merk-naar-marktleider" target="_blank" rel="noopener">https://www.shoppingtomorrow.nl/nl/themas/marketplaces/marketplaces/2026-winnen-op-marketplaces-van-merk-naar-marktleider</a></li>
+      <li>Socialinsider. (2026). <em>Social media benchmarks</em> [Benchmark report; figure for LinkedIn document posts]. Retrieved from <a href="https://www.socialinsider.io/" target="_blank" rel="noopener">https://www.socialinsider.io/</a></li>
+      <li>team5pm. (n.d.-a). <em>team5pm</em> [LinkedIn company page]. LinkedIn. Retrieved September 14, 2026, from <a href="https://www.linkedin.com/company/team5pm/" target="_blank" rel="noopener">https://www.linkedin.com/company/team5pm/</a></li>
+      <li>team5pm. (n.d.-b). <em>team5pm</em> [Instagram profile]. Instagram. Retrieved September 14, 2026, from <a href="https://www.instagram.com/team5pm/" target="_blank" rel="noopener">https://www.instagram.com/team5pm/</a></li>
+      <li>team5pm. (n.d.-c). <em>team5pm</em> [YouTube channel]. YouTube. Retrieved September 14, 2026, from <a href="https://www.youtube.com/@team5pm/about" target="_blank" rel="noopener">https://www.youtube.com/@team5pm/about</a></li>
+    </ul>
+    <a class="to-top" href="#top" data-chrome="1">10XCREW</a>
+  </div>
+</section>
+
+</main>
+
+<footer class="band foot-band">
+  <div class="wrap">
+    <div class="credit"><span>10XCREW · Don Boscostraat 4, Eindhoven · internal use</span><span>Matthew Alberts · September 2026 · raw source files available on request</span></div>
+  </div>
+</footer>
+
+<script>
+(function(){
+  var reduce = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+  function showAll(){
+    var all = document.querySelectorAll('.rv');
+    for (var i = 0; i < all.length; i++){ all[i].classList.add('in'); all[i].classList.add('done'); }
+    var figs = document.querySelectorAll('figure');
+    for (var j = 0; j < figs.length; j++){ figs[j].classList.add('in'); }
+    document.documentElement.classList.add('past');
+  }
+  try {
+
+  var root = document.documentElement;
+  function navH(){ return window.innerWidth <= 980 ? 72 : 64; }
+
+  /* ---- scroll reveal: siblings stagger 70 ms, bars grow, then the value labels fade in ---- */
+  var revealables = [].slice.call(document.querySelectorAll('.rv'));
+  var STAGGER = ['tiles', 'obs', 'opps', 'summary', 'tl'];
+  function staggerIndex(el){
+    var parent = el.parentNode;
+    if (!parent || !parent.classList) return 0;
+    var k;
+    for (k = 0; k < STAGGER.length; k++){ if (parent.classList.contains(STAGGER[k])) break; }
+    if (k === STAGGER.length) return 0;
+    var n = 0, c = parent.firstElementChild;
+    while (c && c !== el){ if (c.classList.contains('rv')) n++; c = c.nextElementSibling; }
+    return n;
+  }
+  function show(el){
+    var delay = reduce ? 0 : staggerIndex(el) * 70;
+    el.style.transitionDelay = delay ? delay + 'ms' : '';
+    el.classList.add('in');
+    var bars = el.querySelectorAll('.bh, .bv');
+    var i;
+    for (i = 0; i < bars.length; i++){
+      bars[i].style.transitionDelay = (120 + i * 60) + 'ms';
+    }
+    if (bars.length){
+      var after = 120 + bars.length * 60 + 80;
+      var vals = el.querySelectorAll('.val');
+      for (i = 0; i < vals.length; i++){
+        vals[i].style.transitionDelay = (after + i * 25) + 'ms';
+      }
+    }
+    window.setTimeout(function(){
+      el.style.transitionDelay = '';
+      el.classList.add('done');
+    }, reduce ? 0 : delay + 600);
+  }
+  if (reduce || !('IntersectionObserver' in window)){
+    revealables.forEach(show);
+  } else {
+    var io = new IntersectionObserver(function(entries, obs){
+      entries.forEach(function(e){
+        if (!e.isIntersecting) return;
+        show(e.target);
+        obs.unobserve(e.target);
+      });
+    }, { rootMargin: '0px 0px -8% 0px', threshold: 0.12 });
+    revealables.forEach(function(el){
+      var r = el.getBoundingClientRect();
+      if (r.top < window.innerHeight * 0.92) { show(el); } else { io.observe(el); }
+    });
+  }
+
+  /* ---- section heads stick while you read the band ---- */
+  var sentinels = [].slice.call(document.querySelectorAll('.sec-sentinel'));
+  if (!reduce && 'IntersectionObserver' in window && sentinels.length){
+    var sio = new IntersectionObserver(function(entries){
+      entries.forEach(function(e){
+        var head = e.target.nextElementSibling;
+        if (!head) return;
+        var stuck = e.boundingClientRect.top <= navH() + 2;
+        if (stuck){ head.classList.add('stuck'); } else { head.classList.remove('stuck'); }
+      });
+    }, { rootMargin: '-' + (navH() + 2) + 'px 0px 0px 0px', threshold: 0 });
+    sentinels.forEach(function(s){ sio.observe(s); });
+  }
+
+  /* ---- wide tables: show a hint while there is more to the right ---- */
+  var shells = [].slice.call(document.querySelectorAll('.table-shell'));
+  var syncAll = function(){};
+  if (shells.length){
+    var syncs = [];
+    shells.forEach(function(shell){
+      var box = shell.querySelector('.table-wrap');
+      if (!box) return;
+      function sync(){
+        var more = (box.scrollWidth - box.clientWidth - box.scrollLeft) > 2;
+        if (more){ shell.classList.add('more'); } else { shell.classList.remove('more'); }
+      }
+      box.addEventListener('scroll', sync, { passive: true });
+      syncs.push(sync);
+      sync();
+    });
+    syncAll = function(){ syncs.forEach(function(f){ f(); }); };
+  }
+
+  /* ---- section menu on small screens ---- */
+  var list = document.getElementById('navList');
+  var toggle = document.getElementById('navToggle');
+  function closeMenu(focus){
+    if (!list || !toggle) return;
+    list.classList.remove('open');
+    toggle.setAttribute('aria-expanded', 'false');
+    if (focus) { toggle.focus(); }
+  }
+  if (toggle && list){
+    toggle.addEventListener('click', function(ev){
+      ev.stopPropagation();
+      var open = list.classList.toggle('open');
+      toggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+    });
+    list.addEventListener('click', function(ev){
+      if (ev.target && ev.target.classList.contains('nav-link')){ closeMenu(false); }
+    });
+    document.addEventListener('keydown', function(ev){
+      if (ev.key === 'Escape' && list.classList.contains('open')){ closeMenu(true); }
+    });
+    document.addEventListener('click', function(ev){
+      if (!list.classList.contains('open')) return;
+      if (list.contains(ev.target) || toggle.contains(ev.target)) return;
+      closeMenu(false);
+    });
+  }
+
+  /* ---- active section, sliding underline, scroll progress ---- */
+  var links = [].slice.call(document.querySelectorAll('.nav-link'));
+  var ink = document.querySelector('.nav-ink');
+  var bar = document.getElementById('progress');
+  var hero = document.querySelector('.hero');
+  var targets = links.map(function(a){ return document.getElementById(a.getAttribute('href').slice(1)); });
+  var current = null;
+
+  function place(link){
+    if (!ink) return;
+    if (!link || window.innerWidth <= 980){ ink.style.opacity = '0'; return; }
+    var r = link.getBoundingClientRect();
+    var p = ink.parentNode.getBoundingClientRect();
+    ink.style.opacity = '1';
+    ink.style.transform = 'translateX(' + Math.round(r.left - p.left) + 'px) scaleX(' + Math.round(r.width) + ')';
+  }
+
+  function update(){
+    if (bar){
+      var span = (document.documentElement.scrollHeight - window.innerHeight);
+      var p = span > 0 ? window.scrollY / span : 0;
+      if (p < 0) { p = 0; } else if (p > 1) { p = 1; }
+      bar.style.transform = 'scaleX(' + p.toFixed(4) + ')';
+    }
+    if (hero){
+      if (window.scrollY > hero.offsetHeight * 0.55){ root.classList.add('past'); }
+      else { root.classList.remove('past'); }
+    }
+    var line = window.scrollY + navH() + 90;
+    var found = null;
+    for (var i = 0; i < targets.length; i++){
+      if (targets[i] && targets[i].offsetTop <= line) found = i;
+    }
+    if (found === current) { place(found === null ? null : links[found]); return; }
+    current = found;
+    links.forEach(function(a){ a.removeAttribute('aria-current'); });
+    if (found !== null){ links[found].setAttribute('aria-current', 'true'); }
+    place(found === null ? null : links[found]);
+  }
+
+  var ticking = false;
+  function onScroll(){
+    if (ticking) return;
+    ticking = true;
+    window.requestAnimationFrame(function(){ ticking = false; update(); });
+  }
+  window.addEventListener('scroll', onScroll, { passive: true });
+  window.addEventListener('resize', function(){ syncAll(); onScroll(); });
+  if (document.fonts && document.fonts.ready){
+    document.fonts.ready.then(function(){ syncAll(); update(); });
+  }
+  update();
+
+  /* ---- cursor ring: fine pointer only, never on touch, never with reduced motion;
+          the system pointer is never hidden ---- */
+  var fine = window.matchMedia && window.matchMedia('(hover: hover) and (pointer: fine)').matches;
+  if (fine && !reduce && 'requestAnimationFrame' in window){
+    var cur = document.createElement('div');
+    cur.className = 'cur';
+    cur.setAttribute('aria-hidden', 'true');
+    document.body.appendChild(cur);
+
+    var LERP = 0.18;
+    var tx = -100, ty = -100, x = -100, y = -100;   /* target and current position */
+    var ts = 1, s = 1;                               /* target and current scale (20px -> 44px) */
+    var running = false, seen = false;
+    var GROW = 'a, button, .tile, .opp, figure, .table-shell, tbody tr, .nav-toggle';
+
+    function frame(){
+      x += (tx - x) * LERP;
+      y += (ty - y) * LERP;
+      s += (ts - s) * LERP;
+      cur.style.transform = 'translate3d(' + (x - 10).toFixed(2) + 'px,' + (y - 10).toFixed(2) + 'px,0) scale(' + s.toFixed(3) + ')';
+      if (Math.abs(tx - x) + Math.abs(ty - y) + Math.abs(ts - s) * 20 > 0.05){
+        window.requestAnimationFrame(frame);
+      } else {
+        running = false;
+      }
+    }
+    function kick(){
+      if (running) return;
+      running = true;
+      window.requestAnimationFrame(frame);
+    }
+    document.addEventListener('mousemove', function(ev){
+      tx = ev.clientX; ty = ev.clientY;
+      if (!seen){ seen = true; x = tx; y = ty; cur.classList.add('show'); }
+      kick();
+    }, { passive: true });
+    document.addEventListener('mouseover', function(ev){
+      var hit = ev.target && ev.target.closest ? ev.target.closest(GROW) : null;
+      if (hit){ ts = 2.2; cur.classList.add('on'); } else { ts = 1; cur.classList.remove('on'); }
+      kick();
+    }, { passive: true });
+    document.addEventListener('mouseleave', function(){ cur.classList.remove('show'); });
+    document.addEventListener('mouseenter', function(){ if (seen) cur.classList.add('show'); });
+    window.addEventListener('blur', function(){ cur.classList.remove('show'); });
+  }
+
+  } catch (err) {
+    showAll();
+  }
+})();
+</script>
+</body>
+</html>
